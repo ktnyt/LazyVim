@@ -11,6 +11,7 @@ vim.keymap.set("n", "n", "nzz", { noremap = true })
 vim.keymap.set("n", "N", "Nzz", { noremap = true })
 
 vim.keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<leader>qw", "<cmd>xa<cr>", { desc = "Save and quit" })
 
 vim.keymap.set("i", "<space>", "<space><C-g>u")
 vim.keymap.set("i", "<cr>", "<cr><C-g>u")
