@@ -23,7 +23,19 @@ vim.keymap.set("i", "<tab>", "<tab><C-g>u")
 -- aerial
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
--- python
 vim.keymap.set("n", "<leader>cyp", function()
-  local basename = vim.fs.basename()
-end)
+  local buffer = vim.api.nvim_get_current_buf()
+  local absolute_path = vim.api.nvim_buf_get_name(buffer)
+  if string.sub(absolute_path, -3) ~= ".py" then
+    -- return
+  end
+  local cwd_path = string.format("%s/", vim.loop.cwd())
+  if cwd_path == nil then
+    return
+  end
+  local relative_path = string.gsub(absolute_path, cwd_path, "")
+  local python_path = string.gsub(relative_path, "/", ".")
+  vim.fn.setreg("", python_path)
+  vim.fn.setreg("*", python_path)
+  vim.fn.setreg("+", python_path)
+end, { desc = "Copy python path to current file" })
