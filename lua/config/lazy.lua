@@ -21,6 +21,10 @@ require("lazy").setup({
     -- import/override with your plugins
     -- coding
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
+    -- editor
+    { import = "lazyvim.plugins.extras.editor.aerial" },
+    { import = "lazyvim.plugins.extras.editor.illuminate" },
+    { import = "lazyvim.plugins.extras.editor.inc-rename" },
     -- formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- languages

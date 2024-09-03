@@ -19,3 +19,11 @@ vim.keymap.set("n", "<leader>qw", "<cmd>xa<cr>", { desc = "Save and quit" })
 vim.keymap.set("i", "<space>", "<space><C-g>u")
 vim.keymap.set("i", "<cr>", "<cr><C-g>u")
 vim.keymap.set("i", "<tab>", "<tab><C-g>u")
+
+-- aerial
+vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+
+-- python
+vim.keymap.set("n", "<leader>cyp", function()
+  local basename = vim.fs.basename()
+end)
