@@ -56,3 +56,4 @@ end
 vim.keymap.set("n", "<leader>cyp", get_python_path, { desc = "Yank python path to current file" })
 
 vim.keymap.set("n", "<leader>cyg", "<cmd>RepoLink!<cr>", { desc = "Yank GitHub permalink to current file" })
+vim.keymap.set("v", "<leader>yg", "<cmd>RepoLink!<cr>", { desc = "Yank GitHub permalink to current file" })
