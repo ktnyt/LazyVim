@@ -13,12 +13,14 @@ vim.keymap.set("n", "<C-b>", "<C-b>zz", { noremap = true })
 vim.keymap.set("n", "n", "nzz", { noremap = true })
 vim.keymap.set("n", "N", "Nzz", { noremap = true })
 
-vim.keymap.set("n", "<leader>fs", "<cmd>w<cr>", { desc = "Save file" })
-vim.keymap.set("n", "<leader>qw", "<cmd>xa<cr>", { desc = "Save and quit" })
-
 vim.keymap.set("i", "<space>", "<space><C-g>u")
 vim.keymap.set("i", "<cr>", "<cr><C-g>u")
 vim.keymap.set("i", "<tab>", "<tab><C-g>u")
+
+vim.keymap.del("t", "<C-h>")
+vim.keymap.del("t", "<C-k>")
+vim.keymap.del("t", "<C-j>")
+vim.keymap.del("t", "<C-l>")
 
 -- aerial
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
