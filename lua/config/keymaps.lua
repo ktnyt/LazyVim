@@ -23,7 +23,7 @@ vim.keymap.del("t", "<C-j>")
 vim.keymap.del("t", "<C-l>")
 
 -- aerial
-vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<cr>")
 
 -- neovim 0.10 renames vim.loop to vim.uv
 local uv = vim.uv or vim.loop
