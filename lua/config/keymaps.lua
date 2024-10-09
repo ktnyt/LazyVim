@@ -22,9 +22,12 @@ vim.keymap.del("t", "<C-k>")
 vim.keymap.del("t", "<C-j>")
 vim.keymap.del("t", "<C-l>")
 
-vim.keymap.set("n", "<leader>p", '"_p')
-vim.keymap.set("n", "<leader>d", '"_d')
-vim.keymap.set("n", "<leader>c", '"_c')
+vim.keymap.set("n", "<leader>p", '"0p')
+vim.keymap.set("n", "<leader>d", '"0d')
+vim.keymap.set("n", "<leader>c", '"0c')
+vim.keymap.set("v", "<leader>p", '"0p')
+vim.keymap.set("v", "<leader>d", '"0d')
+vim.keymap.set("v", "<leader>c", '"0c')
 
 -- aerial
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<cr>")
