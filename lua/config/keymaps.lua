@@ -17,11 +17,6 @@ vim.keymap.set("i", "<space>", "<space><C-g>u")
 vim.keymap.set("i", "<cr>", "<cr><C-g>u")
 vim.keymap.set("i", "<tab>", "<tab><C-g>u")
 
--- vim.keymap.del("t", "<C-h>")
--- vim.keymap.del("t", "<C-k>")
--- vim.keymap.del("t", "<C-j>")
--- vim.keymap.del("t", "<C-l>")
-
 vim.keymap.set("n", "<leader>p", '"0p')
 vim.keymap.set("n", "<leader>d", '"0d')
 vim.keymap.set("n", "<leader>c", '"0c')
